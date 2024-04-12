@@ -1,31 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Basket Weaving - Home</title>
-    </head>
-    <body>
-        <header>
-            <h1>Contact Us</h1>
-        </header>
 
-        <nav>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basket Weaving - Contact Us</title>
+    <link rel="stylesheet" href="./css/contactus.css">
+</head>
 
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="articles.html">Articles</a></li>
-                <li><a href="contactus.html">Contact Us</a></li>
-            </ul>
-        </nav>
+<body>
+    <header>
+        <h1 id="sitetitle">Basket Weaving</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="articles.html">Articles</a></li>
+            <li><a href="contactus.html" class="active">Contact Us</a></li>
+        </ul>
+    </nav>
 
-        <main>
-        <h2>Contact Us</h2>
+    <main>
+        <div class="container">
+            <h1 class="f_title">Contact us</h1>
 
-        </main>
+            <form>
+                <div class="form-group">
+                    <label for="name">Enter your Name</label>
+                    <input type="text" placeholder="Enter name" name="name" required>
+                </div>
+                <div>
+                    <label for="email" required>Enter your email</label>
+                    <input type="email"  required placeholder="Enter email" name="email">
+                </div>
+                <div>
+                    <label for="message">What would you like to send us?</label>
+                    <textarea placeholder="Enter Message" name="message"></textarea>
+                </div>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </main>
 
-        <footer>
-            <!--  -->
-            <span> Copyright &copy; 2024 Year up Students All rights reserved</span>
+    <footer>
+        <span>&copy; 2024 Basket Weaving. All rights reserved.</span>
+    </footer>
+</body>
 
-        </footer>
-    </body>
 </html>
